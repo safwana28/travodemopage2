@@ -4,7 +4,9 @@ import React from 'react';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import AboutUs from './components/AboutUs';
-import ImageGallery from './components/ImageGallery';
+import Treatment from './components/Treatment';
+import ProcessFlow from './components/ProcessFlow';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -12,7 +14,9 @@ function App() {
       <Header />
       <Hero />
       <AboutUs />
-      <ImageGallery />
+      <Treatment />
+      <ProcessFlow />
+      <Footer />
     </div>
   );
 }

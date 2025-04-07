@@ -12,8 +12,16 @@ const AboutUs = () => {
     },
     {
       id: 2,
-      title: 'What we do',
-      content: 'Connect patients with world-class healthcare facilities and specialists, ensuring seamless medical journey and personalized care.'
+      title: (
+        <>
+          Empowering Global
+          <br />
+          Patients Through
+          <br />
+          <span>Indian Medical Excellence</span>
+        </>
+      ),
+      content: ''
     },
     {
       id: 3,
@@ -26,12 +34,11 @@ const AboutUs = () => {
           we do
         </>
       ),
-      content: 'To bridge global healthcare gaps by providing accessible, high-quality medical solutions with compassion and expertise.'
+      content: ''
     },
     {
       id: 4,
-      title: 'Our Vision',
-      content: 'To be the most trusted name in international healthcare facilitation, transforming lives through excellence in medical care.'
+      content: 'we are more than a medical facilitator — we are your trusted health partner across borders.We specialize in connecting international patients with India’s top hospitals, renowned doctors, and personalized treatment plans. From your very first inquiry to post-treatment recovery, we ensure a seamless, compassionate journey that blends world-class healthcare with cultural warmth.'
     }
   ];
 

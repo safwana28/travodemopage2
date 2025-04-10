@@ -5,6 +5,13 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import '../styles/Treatment.css';
 
+// Import images
+import cardiologyImg from '../images/Treatments/cardiology.webp';
+import orthopedicImg from '../images/Treatments/orthopedic.webp';
+import oncologyImg from '../images/Treatments/oncology.webp';
+import neurologyImg from '../images/Treatments/neurology.webp';
+import spineImg from '../images/Treatments/spine.webp';
+
 const treatments = [
   {
     id: 1,
@@ -12,7 +19,7 @@ const treatments = [
     outline: 'LOGY',
     description: 'Advanced cardiac care and procedures',
     color: '#1a6dff',
-    image: '/images/Treatments/cardiology.webp'
+    image: cardiologyImg
   },
   {
     id: 2,
@@ -20,7 +27,7 @@ const treatments = [
     outline: 'PEDIC',
     description: 'Comprehensive bone and joint care',
     color: '#ff3366',
-    image: '/images/Treatments/orthopedic.webp'
+    image: orthopedicImg
   },
   {
     id: 3,
@@ -28,7 +35,7 @@ const treatments = [
     outline: 'LOGY',
     description: 'Cancer treatment and care',
     color: '#00c6b4',
-    image: '/images/Treatments/oncology.webp'
+    image: oncologyImg
   },
   {
     id: 4,
@@ -36,7 +43,7 @@ const treatments = [
     outline: 'LOGY',
     description: 'Brain and nervous system expertise',
     color: '#8e44ad',
-    image: '/images/Treatments/neurology.webp'
+    image: neurologyImg
   },
   {
     id: 5,
@@ -44,7 +51,7 @@ const treatments = [
     outline: 'SURGERY',
     description: 'Advanced spine treatment solutions',
     color: '#e67e22',
-    image: '/images/Treatments/spine.webp'
+    image: spineImg
   }
 ];
 

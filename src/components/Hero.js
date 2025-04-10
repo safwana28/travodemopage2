@@ -8,7 +8,7 @@ const Hero = () => {
   const [isHovered, setIsHovered] = useState(false);
   const boxRef = useRef(null);
 
-  const fullText = "Expert Care with a Heart—Healing Beyond Borders";
+  const fullText = "YOUR BRIDGE TO WORLD CLASS HEALTHCARE";
   const secondLine = "";
 
   useEffect(() => {

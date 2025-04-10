@@ -11,35 +11,40 @@ const treatments = [
     title: 'CARDIO',
     outline: 'LOGY',
     description: 'Advanced cardiac care and procedures',
-    color: '#1a6dff'
+    color: '#1a6dff',
+    image: '/images/Treatments/cardiology.webp'
   },
   {
     id: 2,
     title: 'ORTHO',
     outline: 'PEDIC',
     description: 'Comprehensive bone and joint care',
-    color: '#ff3366'
+    color: '#ff3366',
+    image: '/images/Treatments/orthopedic.webp'
   },
   {
     id: 3,
     title: 'ONCO',
     outline: 'LOGY',
     description: 'Cancer treatment and care',
-    color: '#00c6b4'
+    color: '#00c6b4',
+    image: '/images/Treatments/oncology.webp'
   },
   {
     id: 4,
     title: 'NEURO',
     outline: 'LOGY',
     description: 'Brain and nervous system expertise',
-    color: '#8e44ad'
+    color: '#8e44ad',
+    image: '/images/Treatments/neurology.webp'
   },
   {
     id: 5,
     title: 'SPINE',
     outline: 'SURGERY',
     description: 'Advanced spine treatment solutions',
-    color: '#e67e22'
+    color: '#e67e22',
+    image: '/images/Treatments/spine.webp'
   }
 ];
 
@@ -75,7 +80,9 @@ const Treatment = () => {
               className={`treatment-slide ${index === activeIndex ? 'active' : ''}`}
               style={{'--slide-color': treatment.color}}
             >
-              <div className="circle-background"></div>
+              <div className="circle-background">
+                <img src={treatment.image} alt={treatment.title} className="treatment-image" />
+              </div>
               <div className="treatment-content">
                 <h2 className="treatment-title">
                   <span className="bold-text">{treatment.title}</span>

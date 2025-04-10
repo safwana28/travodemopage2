@@ -68,14 +68,7 @@ const Hero = () => {
         left: 0,
         zIndex: 10
       }}>
-        <img 
-          src="/images/logo.png" 
-          alt="Travo Health Plus Logo" 
-          style={{
-            height: '50px',
-            objectFit: 'contain'
-          }}
-        />
+       
       </header>
       <div className="hero-content" style={{ 
         position: 'relative', 

@@ -8,7 +8,7 @@ const Hero = () => {
   const [isHovered, setIsHovered] = useState(false);
   const boxRef = useRef(null);
 
-  const fullText = "Your bridge to world class health care";
+  const fullText = "Your Bridge To World Class Health Care";
   const secondLine = "";
 
   useEffect(() => {
@@ -83,10 +83,10 @@ const Hero = () => {
         <div className="hero-text" style={{
           maxWidth: '50%',
           color: '#fff',
-          marginTop: '-100px'
+          marginTop: '80px'
         }}>
           <br></br><br></br><br></br><br></br>
-          <h1 className="hero-title inline-block !text-lg !tracking-[0.34rem] !font-bold !font-playfair relative after:absolute after:left-0 after:-bottom-2.5 after:w-full after:h-0.5 after:bg-black">
+          <h1 className="hero-title inline-block !text-lg !tracking-[0.34rem] !font-bold font-dm relative after:absolute after:left-0 after:-bottom-2.5 after:w-full after:h-0.5 after:bg-black">
             {text}
             {showCursor && !hasDisplayed && <span className="cursor">|</span>}
           </h1>
@@ -94,16 +94,7 @@ const Hero = () => {
             {secondLine}
           </h1>
           <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
-          <div style={{ marginTop: '120px', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '2rem', maxWidth: '800px' }}>
-            <button className="cta-button relative overflow-hidden px-12 py-6 text-lg font-medium tracking-wide hover:text-black transition-colors">
-              Get a Free Consultation
-              <span className="btn-fill"></span>
-            </button>
-            <button className="cta-button-gold relative overflow-hidden px-12 py-6 text-black text-lg font-medium tracking-wide">
-              More Treatment
-              <span className="btn-fill-white"></span>
-            </button>
-          </div>
+  
 
           <div
             ref={boxRef}

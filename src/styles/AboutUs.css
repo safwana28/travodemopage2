@@ -1,15 +1,15 @@
 .about-section {
-  padding: 80px 20px;
-  background: #02101d; /* Rich Midnight Blue */
+  padding: 20px 20px 80px 20px;
+  background: #02101d;
+  margin-top: -20px;
 }
 
 .about-grid {
   max-width: 1200px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 400px 1fr;
+  grid-template-columns: repeat(2, 1fr);
   gap: 30px;
-  padding: 20px;
 }
 
 .about-box {
@@ -24,12 +24,26 @@
   transition: transform 0.3s ease;
 }
 
-.about-box:first-child,
 .about-box:nth-child(2) {
+  grid-column: 1 / -1; /* Make box 2 span all columns */
+  text-align: center; /* Center the text */
   background: transparent;
   border: none;
   box-shadow: none;
   cursor: default;
+  padding-top: 0;
+  margin-top: 0;
+}
+
+.about-box:first-child {
+  grid-column: 1 / -1;
+  text-align: center;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  cursor: default;
+  min-height: auto;
+  padding: 20px 0;
 }
 
 .about-box:first-child:hover,
@@ -57,6 +71,11 @@
   justify-content: center;
 }
 
+.about-box:nth-child(2) .content-wrapper {
+  padding-top: 0;
+  margin-top: 0;
+}
+
 .box-title {
   font-family: 'Brillant', serif;
   font-size: 28px;
@@ -66,6 +85,8 @@
   transition: color 0.3s ease;
   line-height: 1.5;
   letter-spacing: 1px;
+  margin-top: 0;
+  padding-top: 0;
 }
 
 .box-title br + br {
@@ -99,22 +120,20 @@
 }
 
 .about-box:nth-child(2) .box-title {
-  font-family: 'Virginia', serif;
-  font-size: 3.5rem;
-  line-height: 1.2;
-  color: #fff;
+  font-family: 'Playfair Display', serif !important;
+  font-size: 30px;
+  text-align: center;
+  line-height: 1.8;
   font-weight: 300;
-  letter-spacing: 0.03em;
-  padding-right: 2rem;
-  text-transform: capitalize;
-  margin-bottom: 1rem;
+  letter-spacing: 0.20em;
+  margin-top: 0;
+  padding-top: 0;
 }
 
 .about-box:nth-child(2) .box-title span {
   display: block;
   font-size: 2rem;
   font-style: italic;
-  margin-top: 0.5rem;
   text-transform: capitalize;
   transition: all 0.6s ease;
   transform-origin: center;
@@ -198,9 +217,5 @@
 @media (max-width: 768px) {
   .about-grid {
     grid-template-columns: 1fr;
-  }
-  
-  .about-box {
-    min-height: 250px;
   }
 }

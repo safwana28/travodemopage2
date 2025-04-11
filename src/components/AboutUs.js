@@ -7,21 +7,14 @@ const AboutUs = () => {
   const boxes = [
     {
       id: 1,
-      title: 'Who we are',
-      content: 'Leading healthcare facilitators with a mission to provide exceptional medical care and support to patients worldwide.'
+      title: 'Empowering Global Patients Through Indian Medical Excellence',
+      content: ''
     },
     {
       id: 2,
-      title: (
-        <>
-          Empowering Global
-          <br />
-          Patients Through
-          <br />
-          <span>Indian Medical Excellence</span>
-        </>
-      ),
+       title: 'Empowering Global Patients Through Indian Medical Excellence',
       content: ''
+     
     },
     {
       id: 3,
@@ -38,7 +31,7 @@ const AboutUs = () => {
     },
     {
       id: 4,
-      content: 'we are more than a medical facilitator — we are your trusted health partner across borders.We specialize in connecting international patients with India’s top hospitals, renowned doctors, and personalized treatment plans. From your very first inquiry to post-treatment recovery, we ensure a seamless, compassionate journey that blends world-class healthcare with cultural warmth.'
+      content: 'Our commitment extends beyond medical care. We understand the unique challenges of international healthcare journeys, and our dedicated team provides comprehensive support at every step. From visa assistance to accommodation arrangements, we ensure a worry-free experience for our global patients and their families.'
     }
   ];
 
@@ -61,8 +54,8 @@ const AboutUs = () => {
             onMouseLeave={handleBoxLeave}
           >
             <div className="content-wrapper">
-              <h2 className="box-title">{box.title}</h2>
-              <p className="box-content">{box.content}</p>
+              {box.title && <h2 className="box-title">{box.title}</h2>}
+              {box.content && <p className="box-content">{box.content}</p>}
             </div>
             <div className="hover-fill"></div>
           </div>

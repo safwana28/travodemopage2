@@ -67,8 +67,9 @@ const Treatment = () => {
         centeredSlides={true}
         loop={true}
         autoplay={{
-          delay: 3000,
+          delay: 1000,
           disableOnInteraction: false,
+          speed: 800
         }}
         navigation={true}
         onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}

@@ -72,8 +72,9 @@ const ProcessFlow = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <h2>Your Journey to Better Health</h2>
-          <p>Simple 4-step process to world-class healthcare</p>
+          <div className="process-header">
+            <h2>Your Journey to Better Health</h2>
+          </div>
         </motion.div>
 
         <motion.div

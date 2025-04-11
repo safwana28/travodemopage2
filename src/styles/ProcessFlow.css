@@ -20,8 +20,16 @@
 }
 
 .process-header h2 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
+  font-family: 'Brillant', serif;
+  font-size: 28px;
+  font-weight: 500;
+  color: #fff;
+  margin-bottom: 20px;
+  transition: color 0.3s ease;
+  line-height: 5;
+  letter-spacing: 2px;
+  margin-top: 0;
+  padding-top: 0;
 }
 
 .process-header p {
